@@ -1,0 +1,95 @@
+#basic dict structure
+daraz = {
+  'cust_name' : 'jk',
+  'cust_id' : '105',
+  'items' : 50 
+}
+print(daraz)
+
+#dictionary with other datatypesa as values
+daraz = {
+  'cust_name' : 'jk',
+  'items' : ['a','b','c'],
+  'member' : True
+}
+print(daraz['items'][1])
+
+#dict with other datatypes as keys
+daraz = {
+  123 : 'Alan'
+  [1,2,3] : True
+}
+print(daraz[123])
+
+#key neeeds to be unique
+daraz = {
+  '123' : 'Hello',
+  '123' : True
+}
+print(daraz['123']) #overwrites the previous value
+
+#using key which doesn't belong to the dict
+user = {
+  'laptop' : 'Dell',
+  'warranty' : 3
+}
+#print(user['RAM'])
+print(user.get('RAM'))
+
+#creating a default value key
+print(user.get('RAM','8GB'))
+
+user = {
+  'laptop' : 'Dell',
+  'Warranty' : 1,
+  'RAM' : '8GB'
+}
+
+#using various method in dictionary
+print(user.keys())
+print(user.values())
+print(user.items())
+print(user)
+print(user.popitem()) #first ko item hatauxa. i.e warranty because dict is unordered.
+print(user.clear())
+
+#tuple
+-Like a list but they are immutable
+-( ) is used for declaration
+-index can be used for accessing the items.
+
+why tuple?
+-when a list is needed but we dont want to change elements in the list.
+-tuples are inflexible
+-sorting, reversingetc can't be done.list
+-it is faster than the list.
+
+tup = (1,2,3,4,5)
+#tuple slicing
+print(tup[1:2]) #yeuta matra print garyo vane comma ni dekhauxa
+print(tup[1:4])
+
+#set
+-A set is a collection which is unordered
+-sets are written with curly brackets.
+
+set1 = {1,2,3,4,5}
+set2 = {4,5,6,7,8,9}
+
+#add element
+set1.add(5)
+
+#difference of two elements
+x = set1.difference(set2)
+print(x)  #returns set that has elements present only in set1 and not in set2
+
+#intersection 
+y = set1.intersection(set2)
+print(y)  #returns a set that contains the elements that exist in both set1 and set2
+
+#union
+z = set1.union(set2)
+print(z)
+
+#pop
+set.pop() #removes a random element from the set
