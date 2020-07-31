@@ -1,0 +1,45 @@
+print(abs(-7))  #absolute value
+
+#bracket() +  power() of () + (* or /) + (- or +)
+
+#binary representation
+print(bin(5)) #binary representation of 5
+print(int('0b101',2))   #0b101 base 2 lai int ma lane
+
+#statement and expression
+num = 10
+result = num/2 #num/2 exp and whole line statement
+print(result)
+
+#type conversion
+
+#Augmented assignment operator
+num = 1
+num += 1
+print(num)
+
+#str concatenation
+print('Hello' + str(9))
+
+#formatted str
+var = 1
+n = "ejbf"
+print(f"nfjnfn {var}")
+print("jbfj {} {}".format(var,n))
+print("jbfj {1} {0}".format(var,n))
+print("jbebe {items} de".format(items = 45))
+
+#str slicing
+item1 = "Apple"
+print(item1[2])
+print(item1[0:])
+print(item1[:3]) 
+print(item1[::2]) #same as 38
+print(item1[0:6:2])   #[start:stop:step]
+print(item1[::-1]) #reverse str
+print(item1[-1]) #last str
+
+#immutability 
+
+#bool
+#truthy and falsy - check in stackoverflow
