@@ -1,8 +1,8 @@
-#Conditional statement
+#Conditional statement,Function, Lambda Expression
 
+#Conditional statement
 #Iterables
 -iterables can be said as collection of items. eg: list, dict,tuple,set,string.
-
 #iterate
 -they can be iterated that means we can go one by one items in it. this process is called iteration.
     
