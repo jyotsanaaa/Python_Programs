@@ -1,13 +1,15 @@
-#Find factorial of a number
+print("Program to calculate Factorial of a number")
 
-num = int(input("Enter a number : "))
-fact = 1
-if num < 0:
-    print("Please enter a positive number. Factorial doesn't exist for a negative number.")
-elif num == 0:
-    print("Factorial of {num} is : 1")
-else:
-    for i in range(1,num+1):
-        fact = fact * i 
-    print(f"Factorial of {num} is : {fact}." )
+number = int(input('Enter the number\t'))
+
+def factorial(number):
+
+    if number == 0:
+        return 1
+    elif number == 1:
+        return 1
+    else:
+        return (factorial(number - 1)) * number
+
+print('The factorial is',factorial(number))
 
